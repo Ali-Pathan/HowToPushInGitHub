@@ -1,0 +1,55 @@
+
+Rajive@DESKTOP-63FL533 MINGW64 /d/Selenium/Eclipse Workplace/HowToPushInGitHub
+$ git init
+Initialized empty Git repository in D:/Selenium/Eclipse Workplace/HowToPushInGitHub/.git/
+
+Rajive@DESKTOP-63FL533 MINGW64 /d/Selenium/Eclipse Workplace/HowToPushInGitHub (master)
+$ git init
+Reinitialized existing Git repository in D:/Selenium/Eclipse Workplace/HowToPushInGitHub/.git/
+
+Rajive@DESKTOP-63FL533 MINGW64 /d/Selenium/Eclipse Workplace/HowToPushInGitHub (master)
+$ git add .
+
+Rajive@DESKTOP-63FL533 MINGW64 /d/Selenium/Eclipse Workplace/HowToPushInGitHub (master)
+$ git commit -m "first commit"
+[master (root-commit) dd0aeee] first commit
+ 6 files changed, 41 insertions(+)
+ create mode 100644 .classpath
+ create mode 100644 .project
+ create mode 100644 .settings/org.eclipse.core.resources.prefs
+ create mode 100644 .settings/org.eclipse.jdt.core.prefs
+ create mode 100644 bin/HowTopushAndCommit.txt
+ create mode 100644 src/HowTopushAndCommit.txt
+
+Rajive@DESKTOP-63FL533 MINGW64 /d/Selenium/Eclipse Workplace/HowToPushInGitHub (master)
+$ git branch -M main
+
+Rajive@DESKTOP-63FL533 MINGW64 /d/Selenium/Eclipse Workplace/HowToPushInGitHub (main)
+$ git remote add origin https://github.com/Ali-Pathan/HowToPushInGitHub.git
+
+Rajive@DESKTOP-63FL533 MINGW64 /d/Selenium/Eclipse Workplace/HowToPushInGitHub (main)
+$ git push -u origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (9/9), 1.15 KiB | 588.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Ali-Pathan/HowToPushInGitHub.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+Rajive@DESKTOP-63FL533 MINGW64 /d/Selenium/Eclipse Workplace/HowToPushInGitHub (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Rajive@DESKTOP-63FL533 MINGW64 /d/Selenium/Eclipse Workplace/HowToPushInGitHub (main)
+$ git reflog
+dd0aeee (HEAD -> main, origin/main) HEAD@{0}: Branch: renamed refs/heads/master to refs/heads/main
+dd0aeee (HEAD -> main, origin/main) HEAD@{2}: commit (initial): first commit
+
+Rajive@DESKTOP-63FL533 MINGW64 /d/Selenium/Eclipse Workplace/HowToPushInGitHub (main)
+$
