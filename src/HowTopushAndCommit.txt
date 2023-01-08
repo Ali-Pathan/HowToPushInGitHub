@@ -53,3 +53,84 @@ dd0aeee (HEAD -> main, origin/main) HEAD@{2}: commit (initial): first commit
 
 Rajive@DESKTOP-63FL533 MINGW64 /d/Selenium/Eclipse Workplace/HowToPushInGitHub (main)
 $
+Final commands
+
+
+Rajive@DESKTOP-63FL533 MINGW64 /d/Selenium/Eclipse Workplace/HowToPushInGitHub (main)
+$ git init
+Reinitialized existing Git repository in D:/Selenium/Eclipse Workplace/HowToPushInGitHub/.git/
+
+Rajive@DESKTOP-63FL533 MINGW64 /d/Selenium/Eclipse Workplace/HowToPushInGitHub (main)
+$ git add .
+
+Rajive@DESKTOP-63FL533 MINGW64 /d/Selenium/Eclipse Workplace/HowToPushInGitHub (main)
+$ git pull --rebase origin master https://github.com/Ali-Pathan/HowToPushInGitHub.git
+error: cannot pull with rebase: Your index contains uncommitted changes.
+error: please commit or stash them.
+
+Rajive@DESKTOP-63FL533 MINGW64 /d/Selenium/Eclipse Workplace/HowToPushInGitHub (main)
+$ git commit -m "How to push in Git added"
+[main 89ec66e] How to push in Git added
+ 2 files changed, 110 insertions(+)
+
+Rajive@DESKTOP-63FL533 MINGW64 /d/Selenium/Eclipse Workplace/HowToPushInGitHub (main)
+$ git pull --rebase origin master https://github.com/Ali-Pathan/HowToPushInGitHub.git
+fatal: invalid refspec 'https://github.com/Ali-Pathan/HowToPushInGitHub.git'
+
+Rajive@DESKTOP-63FL533 MINGW64 /d/Selenium/Eclipse Workplace/HowToPushInGitHub (main)
+$ git remote add origin master https://github.com/Ali-Pathan/HowToPushInGitHub.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+Rajive@DESKTOP-63FL533 MINGW64 /d/Selenium/Eclipse Workplace/HowToPushInGitHub (main)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Ali-Pathan/HowToPushInGitHub.git'
+
+Rajive@DESKTOP-63FL533 MINGW64 /d/Selenium/Eclipse Workplace/HowToPushInGitHub (main)
+$ git pull --rebase origin master
+fatal: couldn't find remote ref master
+
+Rajive@DESKTOP-63FL533 MINGW64 /d/Selenium/Eclipse Workplace/HowToPushInGitHub (main)
+$ git pull --rebase origin main
+From https://github.com/Ali-Pathan/HowToPushInGitHub
+ * branch            main       -> FETCH_HEAD
+Current branch main is up to date.
+
+Rajive@DESKTOP-63FL533 MINGW64 /d/Selenium/Eclipse Workplace/HowToPushInGitHub (main)
+$ git push -u origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1003 bytes | 1003.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Ali-Pathan/HowToPushInGitHub.git
+   dd0aeee..89ec66e  main -> main
+branch 'main' set up to track 'origin/main'.
+
+Rajive@DESKTOP-63FL533 MINGW64 /d/Selenium/Eclipse Workplace/HowToPushInGitHub (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Rajive@DESKTOP-63FL533 MINGW64 /d/Selenium/Eclipse Workplace/HowToPushInGitHub (main)
+$ git reflog
+89ec66e (HEAD -> main, origin/main) HEAD@{0}: commit: How to push in Git added
+dd0aeee HEAD@{1}: Branch: renamed refs/heads/master to refs/heads/main
+dd0aeee HEAD@{3}: commit (initial): first commit
+
+Rajive@DESKTOP-63FL533 MINGW64 /d/Selenium/Eclipse Workplace/HowToPushInGitHub (main)
+$
